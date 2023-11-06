@@ -1,0 +1,17 @@
+Person(
+taxCode VARCHAR(255) PRIMARY KEY,
+firstName VARCHAR(64),
+lastName VARCHAR(64),
+age INTEGER,
+)
+
+1- INSERT INTO Person
+VALUES ("AB123CD", "Emanuele", "Conte", 24);
+
+2- SELECT * FROM People
+WHERE age > 18;
+
+3- SELECT * FROM People
+WHERE lastName = "Pallino"
+
+4- SELECT firstName, COUNT(firstName) AS firstName_num FROM People GROUP BY firstName;
